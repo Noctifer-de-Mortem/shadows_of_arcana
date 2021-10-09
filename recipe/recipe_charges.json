@@ -1,0 +1,36 @@
+[
+  {
+    "result": "essence_prime",
+    "type": "recipe",
+    "id_suffix": "intended method",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "10 m",
+    "batch_time_factors": [ 99, 2 ],
+    "book_learn": [ [ "book_shadow_arcana", 4 ] ],
+    "result_mult": 1,
+    "tools": [ [ [ "book_shadow_arcana", -1 ] ] ],
+    "components": [ [ [ "essence", 5 ] ], [ [ "essence_blood", 15 ] ], [ [ "essence_dull", 150 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "essence_dull",
+    "type": "recipe",
+    "id_suffix": "alternate",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_AMMO",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "10 m",
+    "batch_time_factors": [ 95, 5 ],
+    "book_learn": [ [ "book_shadow_arcana", 4 ] ],
+    "result_mult": 30,
+    "tools": [ [ [ "fire", -1 ] ] ],
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "SECRET" ]
+  }
+]

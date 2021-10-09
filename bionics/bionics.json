@@ -1,0 +1,8 @@
+[
+  {
+    "id": "bio_essence_surge_cell",
+    "copy-from": "bio_essence_surge_cell",
+    "type": "bionic",
+    "fuel_options": [ "essence", "essence_blood", "essence_dull", "essence_pure", "essence_prime" ]
+  }
+]

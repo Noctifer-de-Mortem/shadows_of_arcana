@@ -1,0 +1,65 @@
+[
+  {
+    "id": "void_sword_copy",
+    "type": "TOOL",
+    "looks_like": "longsword",
+    "copy-from": "longsword",
+    "category": "weapons",
+    "name": { "str": "sword of void", "str_pl": "swords of void" },
+    "description": "This is some sort of longsword, decorated with a silver motifs depicting the autumn harvest on the blade.  The blade is as dark as the full-moon night and has an aura of corruption. Just touching it fills you with dread.  You can use it to absorb the energy of monsters to your own vitality at the cost of pain.",
+    "price": 250000,
+    "price_postapoc": 12000,
+    "material": [ "superalloy", "silver" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "ammo": "essence_prime_type",
+    "max_charges": 10,
+    "charges_per_use": 1,
+    "use_action": [
+      {
+        "target": "void_sword_copy_on",
+        "msg": "You commence the harvest.",
+        "menu_text": "Engulf the blade with entropy.",
+        "need_charges": 1,
+        "active": true,
+        "need_charges_msg": "Not enough energy to summon forth the darkness.",
+        "type": "transform"
+      },
+      "ARTIFACT"
+    ],
+    "artifact_data": { "effects_activated": [ "AEA_HURTALL", "AEA_HEAL", "AEA_PAIN" ] },
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "NO_UNLOAD" ]
+  },
+  {
+    "id": "void_sword_copy_on",
+    "type": "TOOL",
+    "looks_like": "longsword",
+    "category": "weapons",
+    "name": { "str": "sword of void (on)", "str_pl": "swords of void (on)" },
+    "description": "This blade is currently draining away the essence provided in exchange for great power.  Just touching fills you with dread, and you can feel entropy engulf its blade as it absorbs your vitality.  The sword feels lighter than before for some reason.",
+    "to_hit": 10,
+    "bashing": 25,
+    "cutting": 250,
+    "price": 250000,
+    "price_postapoc": 12000,
+    "material": [ "superalloy", "silver" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "ammo": "essence_prime_type",
+    "max_charges": 10,
+    "turns_per_charge": 50,
+    "weight": "226 g",
+    "volume": "2750 ml",
+    "techniques": [ "VORPAL", "WIDE" ],
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "You dispel the entropic energy.",
+        "menu_text": "Stop harvest",
+        "target": "void_sword_copy"
+      }
+    ],
+    "artifact_data": { "charge_type": "ARTC_HP", "effects_wielded": [ "AEP_SICK", "AEP_EVIL", "AEP_SAP_LIFE" ] },
+    "flags": [ "UNBREAKABLE_MELEE", "DURABLE_MELEE", "TRADER_AVOID", "NO_UNLOAD", "NO_RELOAD" ]
+  }
+]

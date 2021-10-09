@@ -1,0 +1,18 @@
+[
+  {
+    "result": "void_sword_copy",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "80 m",
+    "book_learn": [ [ "book_shadow_arcana", 6 ] ],
+    "using": [ [ "arcana_holy_symbol_any", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
+    "tools": [ [ [ "book_shadow_arcana", -1 ] ], [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [ [ [ "longsword", 1 ] ], [ [ "silver_small", 200 ] ], [ [ "essence_prime", 20 ] ] ],
+    "flags": [ "SECRET" ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "shadows_of_arcana",
+    "name": "Shadows of Arcana",
+    "authors": [ "Noctifer-de-Mortem" ],
+    "maintainers": [ "Noctifer-de-Mortem" ],
+    "description": "An expansion mod using the lore of the Arcana mod and Cataclysm++.  An occult organization disconnected from the mundane world is forced to come out of the shadows once the world ended.  Will you survive, keep your oath or explore what was once forbidden?",
+    "category": "content",
+    "dependencies": [ "dda", "Cata++", "Arcana" ],
+    "path": ""
+  }
+]
