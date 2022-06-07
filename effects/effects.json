@@ -1,0 +1,64 @@
+[
+  {
+    "type": "effect_type",
+    "id": "mask_eclipse_evil_mimic",
+    "apply_message": "You feel an evil presence…",
+    "rating": "bad",
+    "max_duration": "20 m",
+    "max_intensity": 25,
+    "int_dur_factor": "3 m",
+    "base_mods": {
+      "str_mod": [ -1 ],
+      "dex_mod": [ -1 ],
+      "int_mod": [ 2 ],
+      "per_mod": [ 2 ],
+      "fatigue_tick": [ 1800 ],
+      "fatigue_chance": [ 6, 12 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -1.2 ],
+      "dex_mod": [ -1.2 ],
+      "int_mod": [ -0.8 ],
+      "per_mod": [ -0.8 ],
+      "stamina_min": [ 1.5 ],
+      "fatigue_min": [ 0.25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "void_sword_evil_mimic",
+    "apply_message": "You feel an evil presence…",
+    "rating": "bad",
+    "max_duration": "10 m",
+    "max_intensity": 50,
+    "int_dur_factor": "1 m 30 t",
+    "base_mods": {
+      "str_mod": [ 2 ],
+      "dex_mod": [ 2 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -1 ],
+      "fatigue_tick": [ 1800 ],
+      "fatigue_chance": [ 6, 12 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -0.8 ],
+      "dex_mod": [ -0.8 ],
+      "int_mod": [ -1.2 ],
+      "per_mod": [ -1.2 ],
+      "stamina_min": [ 1.5 ],
+      "fatigue_min": [ 0.25 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "radiant_sigil_mending",
+    "blocks_effects": [ "bleed" ],
+    "morale": "morale_debilitating_bliss",
+    "base_mods": { "morale": [ 50 ], "int_mod": [ -5 ], "speed_mod": [ -5 ] },
+    "scaling_mods": { "morale": [ 10 ], "int_mod": [ -1 ], "speed_mod": [ -5 ] },
+    "rating": "good",
+    "max_intensity": 25,
+    "max_duration": "10 m",
+    "int_dur_factor": "1 m"
+  }
+]

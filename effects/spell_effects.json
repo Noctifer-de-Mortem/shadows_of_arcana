@@ -1,0 +1,61 @@
+[
+  {
+    "type": "SPELL",
+    "id": "mask_eclipse_react_evil_mimic",
+    "name": { "str": "React: Exposure to the beyond" },
+    "description": "This adds a random duration of an effect that mimics evil but technically isn't.",
+    "sprite": "fd_veil_light",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "mask_eclipse_evil_mimic",
+    "min_duration": 80000,
+    "max_duration": 180000
+  },
+  {
+    "type": "SPELL",
+    "id": "void_sword_react_evil_mimic",
+    "name": { "str": "React: Evil Attraction" },
+    "description": "This adds a random duration of an effect that mimics evil but technically isn't.",
+    "sprite": "fd_veil_light",
+    "flags": [ "SILENT", "RANDOM_DURATION" ],
+    "message": "",
+    "valid_targets": [ "self" ],
+    "effect": "target_attack",
+    "effect_str": "void_sword_evil_mimic",
+    "min_duration": 8000,
+    "max_duration": 18000
+  },
+  {
+    "id": "radiant_sigil_react_healing",
+    "type": "SPELL",
+    "name": { "str": "Radiant Mending" },
+    "description": "Forces the body to heal itself, but numbs it as well as numbs the mind.",
+    "message": "Your sigil shimmers with odd light, and you feel at ease.",
+    "sprite": "fd_dazzling",
+    "valid_targets": [ "self" ],
+    "extra_effects": [ { "id": "radiant_sigil_react_heal_pain", "hit_self": true } ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION" ],
+    "effect_str": "radiant_sigil_mending",
+    "min_damage": -25,
+    "max_damage": -25,
+    "effect": "target_attack",
+    "min_duration": 30000,
+    "max_duration": 60000
+  },
+  {
+    "id": "radiant_sigil_react_heal_pain",
+    "type": "SPELL",
+    "name": { "str": "Radiant Pain Heal" },
+    "description": "Your aches disipate.",
+    "sprite": "fd_veil_light",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "min_damage": 10,
+    "max_damage": 10,
+    "effect": "recover_energy",
+    "effect_str": "PAIN"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "type": "mutation",
+    "id": "MASK_ECLIPSE_CAMOUFLAGE",
+    "name": { "str": "Arcane Camouflage" },
+    "points": 99,
+    "valid": false,
+    "description": "Your mask is hidding you from the mundane.",
+    "player_display": false,
+    "noise_modifier": 0.0,
+    "scent_intensity": 0,
+    "visibility": -20,
+    "stealth_modifier": 60
+  },
+  {
+    "type": "mutation",
+    "id": "MASK_ECLIPSE_ACTIVE",
+    "name": { "str": "Arcane Exposure" },
+    "points": 99,
+    "valid": false,
+    "description": "Your mask is letting you witness the beyond.",
+    "player_display": false,
+    "visibility": 40,
+    "social_modifiers": { "intimidate": 25 },
+    "stealth_modifier": -60,
+    "noise_modifier": 1.0,
+    "scent_intensity": 500
+  }
+]

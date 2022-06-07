@@ -1,0 +1,71 @@
+[
+  {
+    "id": "mask_eclipse_copy",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "mask of the eclipse", "str_pl": "masks of the eclipse" },
+    "description": "A mysterious mask with sigils of the sun and the moon in an eclipse. Wearing this mask helps hide their mundane signature; their scent, the noise they make, how much attention people pay to your presence. You could also load this mask with prime essence to make it stop hidding you and let you tske a peak beyond the mundane; bewarned, you will able to see the good and the bad.",
+    "weight": "850 g",
+    "volume": "1 L",
+    "price": "250 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "somen_clairvoyance",
+    "color": "dark_gray",
+    "max_charges": 5,
+    "charges_per_use": 1,
+    "ammo": "essence_prime_type",
+    "covers": [ "eyes", "mouth" ],
+    "coverage": 100,
+    "encumbrance": 0,
+    "warmth": 5,
+    "material_thickness": 3,
+    "environmental_protection": 1,
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "MASK_ECLIPSE_CAMOUFLAGE" ] },
+	{ "has": "WORN", "condition": "ACTIVE", "mutations": [ "MASK_ECLIPSE_ACTIVE" ], 
+	"intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "mask_eclipse_react_evil_mimic" } ] } ] },
+	"ench_effects": [ { "effect": "arcana_clairvoyance_plus_hidden", "intensity": 1 } ]
+	}
+	] },
+    "use_action": {
+      "target": "mask_eclipse_copy_on",
+      "msg": "The mask stops hidding you and lets you witness the beyond.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Not enough power to witness the beyond.",
+      "type": "transform"
+
+    },
+    "flags": [ "STURDY", "VARSIZE", "HELMET_COMPAT" ]
+  },
+  {
+    "id": "mask_eclipse_copy_on",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_eclipse_copy",
+    "repairs_like": "mask_eclipse_copy",
+    "name": { "str": "mask of the eclipse (on)", "str_pl": "masks of the eclipse (on)" },
+    "description": "The mask is actively showing you information beyond casuality; you cannot remove this mask unless you deactivate it or it runs out of essence. You are givien clairvoyance to see beyond mundane obsticles and can see various pieces of information you would normally need specialized instruments to do so. Bewarned, prolonged exposure the the beyond will draw unwanted attention and you will not be able to trust what you see.",
+    "turns_per_charge": 150,
+    "revert_to": "mask_eclipse_copy",
+    "use_action": {
+      "target": "mask_eclipse_copy",
+      "msg": "The mask returns to hiding your presence",
+      "menu_text": "Turn off",
+      "type": "transform"
+    },
+    "extend": { "flags": [ "SUN_GLASSES", "FIX_FARSIGHT", "FIX_NEARSIGHT", "WATCH", "THERMOMETER", "HYGROMETER", "BAROMETER", "NO_TAKEOFF" ] }
+  },
+  {
+    "id": "radiant_sigil_copy",
+    "copy-from": "holy_symbol",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "radiant sigil", "str_pl": "radiant sigils" },
+    "description": "A pendant in the form of a particular sigil of arcane significance. The motif itself could be intepreted as religious but all meaning has been stripped away for its practical arcane use, yet the effects it gives are all the same. Activating it will heal the use but give them a debilitating bliss; the will move slower, be unable to think clearly but will feel incredible as the arcane effects mends the body. Using this multiple times in quick succession will compound its side effects.",
+    "material": [ "steel" ],
+    "max_charges": 5,
+    "charges_per_use": 1,
+    "ammo": "essence_prime_type",
+    "use_action": { "type": "cast_spell", "spell_id": "radiant_sigil_react_healing", "no_fail": true, "level": 0, "need_worn": true }
+  }
+]

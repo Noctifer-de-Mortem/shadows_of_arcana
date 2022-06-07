@@ -1,0 +1,8 @@
+[
+  {
+    "id": "morale_debilitating_bliss",
+    "type": "morale_type",
+    "text": "Debilitating Bliss",
+    "permanent": true
+  }
+]

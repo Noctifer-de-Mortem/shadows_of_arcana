@@ -1,0 +1,22 @@
+[
+  {
+    "type": "scenario",
+    "name": "Arcane Shadows",
+    "description": "You were part of an arcane order that was composed of a lose group of members that moslty operated in their own forums and operated in silence from the mundane world and other arcane orders. Now that the world has ended you need to come out of hidding.",
+    "id": "sao_start",
+    "points": 0,
+    "start_name": "Among the mundane",
+    "allowed_locs": [ "arcanist_basement" ],
+    "professions": [
+      "soa_relic_holder"
+    ],
+    "traits": [
+      "SPELL_CLAIRVOYANCE",
+      "SPELL_CLARITY",
+      "SPELL_INSIGHT",
+      "SPELL_LIGHT",
+      "SPELL_LOCKPICK"
+    ],
+    "flags": [ "CITY_START", "LONE_START" ]
+  }
+]

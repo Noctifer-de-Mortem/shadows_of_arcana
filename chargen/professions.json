@@ -1,0 +1,44 @@
+[
+  {
+    "type": "profession",
+    "id": "soa_relic_holder",
+    "name": "Relic Holder",
+    "description": "Your knowldge of the arcane goes deep, you carry hand-made relics from the scriptures of your order. Now that the world has ended, only your skills, materials and relics can keep you alive.",
+    "spells": [ { "id": "arcana_magic_capacitance", "level": 1 } ],
+    "points": 8,
+    "skills": [
+      { "level": 6, "name": "magic" },
+      { "level": 4, "name": "fabrication" },
+      { "level": 3, "name": "cooking" },
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "cutting" },
+      { "level": 2, "name": "computer" },
+      { "level": 2, "name": "electronics" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "tshirt",
+          "pants_cargo",
+          "trenchcoat",
+          "socks",
+          "boots",
+          "gloves_fingerless",
+          "knit_scarf",
+          "slingpack",
+          "smart_phone",
+          "book_shadow_arcana"
+        ],
+        "entries": [
+          { "item": "mask_eclipse_copy", "charges": 5 },
+		  { "item": "radiant_sigil_copy", "charges": 20 },
+          { "item": "void_sword_copy", "charges": 10, "container-item": "baldric" }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boy_shorts" ]
+    },
+    "traits": [ "PROF_ARCANIST" ],
+    "flags": [ "SCEN_ONLY" ]
+  }
+]
