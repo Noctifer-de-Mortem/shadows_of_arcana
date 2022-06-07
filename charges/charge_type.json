@@ -1,8 +1,0 @@
-[
-  {
-    "id": "essence_prime_type",
-    "name": "prime essence",
-    "default": "essence_prime",
-    "type": "ammunition_type"
-  }
-]
